@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage[english]{babel}
-\usepackage{amsmath, amssymb}
+\usepackage{amsmath, amssymb, amsthm}
 
 \title{Bootcamp : Maths}
 \author{Baptiste Rouger}
@@ -56,14 +56,47 @@
                         \noindent \textit{Example : } 400 ft , $y = 400 - 16t^2$\\
                         $400 -16t^2 = 0$\\
                         $t = 5$\\
-                        On average, 80 ft per second. But we want to know the instantaneous speed when the pumpkin hits the ground :\\
+                        On average, -80 ft per second. But we want to know the instantaneous speed when the pumpkin hits the ground :\\
                         $f'(x) = -32t$\\
-                        $f'(5) = -160 ft.s^{-1}$
+                        $f'(5) = -160 ft.s^{-1}$\\
 
+                        $f(x)$ is continuous at $x_0$ if
+                        \[ lim_{x \to x_0}; f(x) = f(x_0)  \Leftrightarrow \lim_{x \to x_0}; f(x) - f(x_0) = 0\]
+                        \textbf{Theorem :}
+                            If $f$ is differentiable at $x_0$ then $f$ is continuous at $x_0$
+                            \[\lim_{x \to x_0}; f(x) - f(x_0) = \lim_{x \to x_0};\frac{f(x) - f(x_0)}{x-x_0}(x-x_0) = f'(x_0).0 = 0 \]
 
                     \paragraph{Derivatives of composed functions}
 
+                        \[ (u+v)'(x)= \lim_{\Delta x \to 0}; \frac{(u+v)(x+\Delta x) - (u +v)(x)}{\Delta x}\\
+                        = \lim_{\Delta x \to 0}; \frac{u(x+\Delta x) + v(x+\Delta x) - u(x) - v(x)}{\Delta x}\\
+                        = u'(x) + v'(x)
+                        \]
+
+                        \[
+                            (uv)' = u'v + v'u\\
+                            (\frac{u}{v})' = \frac{u'v - v'u}{v^2}
+                        \]
+
+                        \[ \lim_{x \to 0}; \frac{\sin x}{x} = 1\\
+                            \lim_{x \to 0}; \frac{\cos x -1}{x} = 0
+                        \]
+                        \[ f'(x) = \frac{d}{dx} \sin x = \lim_{x+\Delta x} \frac{\sin(x+\Delta x) - \sin x}{\Delta x}\\
+                        = \lim_{x+\Delta x} \frac{\sin x \cos \Delta x + \sin \Delta x \cos x - \sin x}{\Delta x}
+                        = \lim_{x+\Delta x} \frac{\sin(\cos \Delta x -1)}{\Delta x} + \lim_{x+\Delta x} \frac{\cos x \sin \Delta x}{\Delta x}\\
+                        = 0 + \cos x
+                        \]
+
                     \paragraph{Chain rules}
+                        $ y= f(g(t))$\\
+                        \[ \frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dx} \]
+
+                        $y = f(x) = \sin x$\\
+                        $x = g(t) = t^2$\\
+                        $y = sin(t^2)$\\
+                        \[ \frac{d}{dt}(\sin t^2) = (\frac{dy}{dx})(\frac{dx}{dt})=(\cos x)(2t) = \cos(t^2)2t \]
+                        $f(g(x))' = g'(x)f'(g(x))$
+
 
                     \paragraph{Higher derivatives}
 
