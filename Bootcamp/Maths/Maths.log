@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.9.6)  6 SEP 2016 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.9.6)  6 SEP 2016 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,39 +200,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--62
  []
 
 [2]
-Overfull \hbox (141.28561pt too wide) detected at line 74
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 v\OT1/cm
-r/m/n/10 )[](\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = []; [][]  = []; [][]  = \OML
-/cmm/m/it/10 u[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm
-/m/it/10 v[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )
- []
-
-
-Overfull \hbox (268.98854pt too wide) detected at line 88
-\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] [
-] \OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = [] [][]  = [] [] = [] [] + [] [][]  = 0 
-+ [] \OML/cmm/m/it/10 x
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
-[3] (./Maths.aux) ) 
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
+
+ []
+
+[4] (./Maths.aux) ) 
 Here is how much of TeX's memory you used:
  1612 strings out of 493126
  18562 string characters out of 6138647
- 79947 words of memory out of 5000000
+ 80947 words of memory out of 5000000
  5106 multiletter control sequences out of 15000+600000
  11849 words of font info for 46 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 27i,6n,26p,246b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,10n,26p,246b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
 12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -245,12 +235,12 @@ nts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
-pfb>
-Output written on Maths.pdf (3 pages, 145494 bytes).
+cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Maths.pdf (4 pages, 155560 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

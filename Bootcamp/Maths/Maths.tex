@@ -68,24 +68,27 @@
 
                     \paragraph{Derivatives of composed functions}
 
-                        \[ (u+v)'(x)= \lim_{\Delta x \to 0}; \frac{(u+v)(x+\Delta x) - (u +v)(x)}{\Delta x}\\
-                        = \lim_{\Delta x \to 0}; \frac{u(x+\Delta x) + v(x+\Delta x) - u(x) - v(x)}{\Delta x}\\
-                        = u'(x) + v'(x)
-                        \]
+                        \begin{align*} (u+v)'(x) &= \lim_{\Delta x \to 0}; \frac{(u+v)(x+\Delta x) - (u +v)(x)}{\Delta x}\\
+                        &= \lim_{\Delta x \to 0}; \frac{u(x+\Delta x) + v(x+\Delta x) - u(x) - v(x)}{\Delta x}\\
+                        &= u'(x) + v'(x)
+                        \end{align*}
 
-                        \[
-                            (uv)' = u'v + v'u\\
-                            (\frac{u}{v})' = \frac{u'v - v'u}{v^2}
-                        \]
+                        \begin{align*}
+                            (uv)' &= u'v + v'u\\
+                            (\frac{u}{v})' &= \frac{u'v - v'u}{v^2}
+                        \end{align*}
 
-                        \[ \lim_{x \to 0}; \frac{\sin x}{x} = 1\\
-                            \lim_{x \to 0}; \frac{\cos x -1}{x} = 0
-                        \]
-                        \[ f'(x) = \frac{d}{dx} \sin x = \lim_{x+\Delta x} \frac{\sin(x+\Delta x) - \sin x}{\Delta x}\\
-                        = \lim_{x+\Delta x} \frac{\sin x \cos \Delta x + \sin \Delta x \cos x - \sin x}{\Delta x}
-                        = \lim_{x+\Delta x} \frac{\sin(\cos \Delta x -1)}{\Delta x} + \lim_{x+\Delta x} \frac{\cos x \sin \Delta x}{\Delta x}\\
-                        = 0 + \cos x
-                        \]
+
+                        \[ \lim_{x \to 0}; \frac{\sin x}{x} = 1\]
+                        \[    \lim_{x \to 0}; \frac{\cos x -1}{x} = 0\]
+
+                        \begin{align*}
+                            f'(x) &= \frac{d}{dx} \sin x\\
+                            &= \lim_{x+\Delta x} \frac{\sin(x+\Delta x) - \sin x}{\Delta x}\\
+                            &= \lim_{x+\Delta x} \frac{\sin x \cos \Delta x + \sin \Delta x \cos x - \sin x}{\Delta x}\\
+                            &= \lim_{x+\Delta x} \frac{\sin(\cos \Delta x -1)}{\Delta x} + \lim_{x+\Delta x} \frac{\cos x \sin \Delta x}{\Delta x}\\
+                            &= 0 + \cos x
+                        \end{align*}
 
                     \paragraph{Chain rules}
                         $ y= f(g(t))$\\
@@ -97,10 +100,28 @@
                         \[ \frac{d}{dt}(\sin t^2) = (\frac{dy}{dx})(\frac{dx}{dt})=(\cos x)(2t) = \cos(t^2)2t \]
                         $f(g(x))' = g'(x)f'(g(x))$
 
-
-                    \paragraph{Higher derivatives}
-
                     \paragraph{Implicit differntiation}
+
+                    $y = f(x) $\\
+                    $x^2 + y^2 = 1 $\\
+
+                    $\frac{d}{dx} (x^a) = ax^{a-1}$\\
+                    $ a = m/n ; y = x^{m/n} ; y^n = x^m$\\
+                    $ny^{n-1}.\frac{dy}{dx} = mx^{m-1}$\\
+                    $\frac{dy}{dx} = \frac{m}{n} \frac{x^{m-1}}{y^{n-1}} = \frac{m}{n} \frac{x^{m-1}}{x^{{m-1}^{n-1}}}$\\
+                    $ = \frac{m}{n} \frac{x^{m-1}}{x^{\frac{m(n-1)}{n}}}$\\
+                    $ \frac{m}{n}x^{\frac{m}{n} -1} = ax^{a-1} $
+
+                    \begin{align*}
+                        \frac{d}{dx} (x^a) = ax^{a-1}\\
+                        a = m/n ; y = x^{m/n} ; y^n = x^m\\
+                        ny^{n-1}.\frac{dy}{dx} =& mx^{m-1}\\
+                        \frac{dy}{dx} &= \frac{m}{n} \frac{x^{m-1}}{y^{n-1}}\\
+                         &= \frac{m}{n} \frac{x^{m-1}}{x^{{m-1}^{n-1}}}\\
+                         &= \frac{m}{n} \frac{x^{m-1}}{x^{\frac{m(n-1)}{n}}}\\
+                         \frac{m}{n}x^{\frac{m}{n} -1} &= ax^{a-1}
+                    \end{align*}
+
 
         \subsection{Differential equations}
 
