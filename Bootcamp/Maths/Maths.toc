@@ -1,0 +1,13 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Session 1}{2}
+\contentsline {subsection}{\numberline {1.1}Calculus}{2}
+\contentsline {subsubsection}{\numberline {1.1.1}Derivative}{2}
+\contentsline {paragraph}{Definition}{2}
+\contentsline {paragraph}{Some derivatives}{2}
+\contentsline {paragraph}{Continuity}{2}
+\contentsline {paragraph}{Derivatives of composed functions}{2}
+\contentsline {paragraph}{Chain rules}{2}
+\contentsline {paragraph}{Higher derivatives}{2}
+\contentsline {paragraph}{Implicit differntiation}{2}
+\contentsline {subsection}{\numberline {1.2}Differential equations}{3}
+\contentsline {subsection}{\numberline {1.3}Linear Algebra}{3}
