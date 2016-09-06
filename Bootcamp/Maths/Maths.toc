@@ -5,9 +5,9 @@
 \contentsline {paragraph}{Definition}{2}
 \contentsline {paragraph}{Some derivatives}{2}
 \contentsline {paragraph}{Continuity}{2}
-\contentsline {paragraph}{Derivatives of composed functions}{2}
-\contentsline {paragraph}{Chain rules}{2}
-\contentsline {paragraph}{Higher derivatives}{2}
-\contentsline {paragraph}{Implicit differntiation}{2}
+\contentsline {paragraph}{Derivatives of composed functions}{3}
+\contentsline {paragraph}{Chain rules}{3}
+\contentsline {paragraph}{Higher derivatives}{3}
+\contentsline {paragraph}{Implicit differntiation}{3}
 \contentsline {subsection}{\numberline {1.2}Differential equations}{3}
 \contentsline {subsection}{\numberline {1.3}Linear Algebra}{3}
