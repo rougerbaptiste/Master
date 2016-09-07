@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.9.6)  7 SEP 2016 16:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.22)  7 SEP 2016 21:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -267,7 +267,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--240
 [7] [8] [9] (./Maths.aux) ) 
 Here is how much of TeX's memory you used:
  1614 strings out of 493126
- 18603 string characters out of 6138647
+ 18603 string characters out of 6138646
  83947 words of memory out of 5000000
  5108 multiletter control sequences out of 15000+600000
  11849 words of font info for 46 fonts, out of 8000000 for 9000
@@ -288,7 +288,7 @@ c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
 .pfb>
-Output written on Maths.pdf (9 pages, 175978 bytes).
+Output written on Maths.pdf (9 pages, 176772 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream
