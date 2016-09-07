@@ -1,3 +1,4 @@
+load myvariables
 baptiste = round(b * chiara + ceil(a));
 
 t = linspace(0,20,11); % same as [0:2:20]
@@ -6,7 +7,7 @@ u = linspace(0,20,21);
 
 z = [-2;4;1;-5;10];
 q = [3,9,0,2];
-%z*q % That doen't work because the vectors do not have the same dimensions
+z*q % That works 
 %q*z % That doen't work because the vectors do not have the same dimensions
 
 z2 = [-2;4;1;-5];
@@ -20,6 +21,6 @@ clear
 load myvariables.mat weird
 
 weird(5) = weird(1) + weird(2);
-weird(6) = rand;
+weird(6) = round(rand*10);
 weird = weird*length(weird);
 weird
