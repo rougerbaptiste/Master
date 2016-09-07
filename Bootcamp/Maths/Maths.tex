@@ -147,9 +147,39 @@
             \end{align*}
             $f(x) = 2^x$ initial function for wich we want to comute the derivative.\\
             $f(kx) = 2^{kx} = (2^k)^x = b^x$ (with $b=2^k$)\\
-            So $f'(kx) = kf'(kx)$
+            So $\frac{d}{dx}b^x = kf'(kx)$
             \[ \frac{d}{dx}b^x_{x=0} = kf'(0) = M(2)k \]
-            If $y=e^x$ then $\ln y = x$
+            If $y=e^x$ then $\ln y = x$\\
+
+            \begin{align*}
+                \frac{d}{dx} \ln x\\
+                w = \ln x \Rightarrow e^w = x\\
+                \frac{d}{dx} e^w &= \frac{d}{dx} x = 1\\
+                \frac{d}{dx} e^w \frac{dw}{dx} &= 1\\
+                e^w \frac{dw}{dx} &= 1 \Rightarrow \\
+                \frac{dw}{dx} &= \frac{1}{e^w} = \frac{1}{x}
+            \end{align*}
+
+            \begin{align*}
+                \frac{d}{dx} a^x &= ?\\
+                a^x &= (e^{\ln a})^x = e^{x\ln a}\\
+                \frac{d}{dx} a^x &= e^{x\ln a} . \ln a\\
+                &= a^x \ln a\\
+                M(a) &= \ln a
+            \end{align*}
+
+            \begin{align*}
+                \frac{d}{dx} u &= ?\\
+                \frac{d}{dx} \ln u &= \frac{d \ln u}{du} . \frac{du}{dx} \\
+                &= \frac{1}{u}.\frac{du}{dx}\\
+                \frac{d}{dx} a^x = ? , u = a^x , \ln u = x\ln a \\
+                (\ln u)' &= \ln a. \frac{u'}{u}\\
+                &= \ln a . u'\\
+                &= \ln a .u \\
+                (a^x)' &= a^x \ln a
+            \end{align*}
+
+            %% Graph with exponential, logarithm.
 
         \subsection{Linear Algebra}
 

@@ -7,4 +7,6 @@ pdf("plot.pdf")
     plot(ord~ absc, ylim=c(-1,5))
     abline(h=0)
     abline(v=0)
+
+    plot(log(absc, exp(1)))
 dev.off()
