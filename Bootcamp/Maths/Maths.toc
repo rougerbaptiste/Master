@@ -10,4 +10,5 @@
 \contentsline {paragraph}{Implicit differntiation}{4}
 \contentsline {subsection}{\numberline {1.2}Differential equations}{6}
 \contentsline {subsection}{\numberline {1.3}Antiderivatives}{6}
-\contentsline {subsection}{\numberline {1.4}Linear Algebra}{7}
+\contentsline {subsubsection}{\numberline {1.3.1}Differential equations}{7}
+\contentsline {subsection}{\numberline {1.4}Linear Algebra}{8}

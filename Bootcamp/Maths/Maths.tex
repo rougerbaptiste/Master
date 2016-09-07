@@ -17,220 +17,246 @@
     \section{Session 1}
 
 
-        \subsection{Calculus}
+    \subsection{Calculus}
 
-            Calculus : study of changes.\\
+    Calculus : study of changes.\\
 
-            2 types of calculus : differential and integral calculus.\\
+    2 types of calculus : differential and integral calculus.\\
 
-            Differential : distance $\rightarrow$ speed\\
-            Integration : speed $\rightarrow$ distance\\
+    Differential : distance $\rightarrow$ speed\\
+    Integration : speed $\rightarrow$ distance\\
 
-                \subsubsection{Derivative}
+    \subsubsection{Derivative}
 
-                    \paragraph{Definition}
+    \paragraph{Definition}
 
-                        ~\\The derivative is the slope of the tangent line on a point.\\
-                        \textit{Definition :} The derivative of $f$ at $x_0$ is the slope of the line tangent to the graph of $f$ at $x_0$.\\
-                        \[ \lim_{\Delta x \to 0}; \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'(x_0) \]
-
-
-
-                    \paragraph{Some derivatives}
-                    $f(x) = \frac{1}{x} (x>0)  $\\
-                    $\frac{\Delta f}{\Delta x} =  \frac{\frac{1}{x_0 + \Delta x} - \frac{1}{x_0}}{\Delta x} = -\frac{1}{x_0^2 + x_0 \Delta x} $
-                    \[ f'(x_0) = \lim_{\Delta x \to 0}; -\frac{1}{x_0^2 + x_0 \Delta x} = -\frac{1}{x_0^2} \]
-                    ~\\~\\
-
-                    $f(x) = x^n$\\
-                    \[f'(x) = \lim_{\Delta x \to 0}; \frac{(x + \Delta x)^n - x^n}{\Delta x} = \lim_{\Delta x \to 0}; \frac{(\binom n0 x^n \Delta x ^0 + \binom n1 x^n \Delta x ^1 +... ) - x^n}{\Delta x} = nx^{n-1} \]
-
-                    ~\\
-                    $(f+g)'(x) = f'(x)+g'(x)$
+    ~\\The derivative is the slope of the tangent line on a point.\\
+    \textit{Definition :} The derivative of $f$ at $x_0$ is the slope of the line tangent to the graph of $f$ at $x_0$.\\
+    \[ \lim_{\Delta x \to 0}; \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'(x_0) \]
 
 
-                    \paragraph{Continuity}
-                        ~\\
-                        Notations : $f'(x) = \frac{dy}{dx} = \frac{df}{dx} = Df = \frac{d}{dx}f$ = y'\\
 
-                        \noindent \textit{Example : } 400 ft , $y = 400 - 16t^2$\\
-                        $400 -16t^2 = 0$\\
-                        $t = 5$\\
-                        On average, -80 ft per second. But we want to know the instantaneous speed when the pumpkin hits the ground :\\
-                        $f'(x) = -32t$\\
-                        $f'(5) = -160 ft.s^{-1}$\\
+    \paragraph{Some derivatives}
+    $f(x) = \frac{1}{x} (x>0)  $\\
+    $\frac{\Delta f}{\Delta x} =  \frac{\frac{1}{x_0 + \Delta x} - \frac{1}{x_0}}{\Delta x} = -\frac{1}{x_0^2 + x_0 \Delta x} $
+    \[ f'(x_0) = \lim_{\Delta x \to 0}; -\frac{1}{x_0^2 + x_0 \Delta x} = -\frac{1}{x_0^2} \]
+    ~\\~\\
 
-                        $f(x)$ is continuous at $x_0$ if
-                        \[ lim_{x \to x_0}; f(x) = f(x_0)  \Leftrightarrow \lim_{x \to x_0}; f(x) - f(x_0) = 0\]
-                        \textbf{Theorem :}
-                            If $f$ is differentiable at $x_0$ then $f$ is continuous at $x_0$
-                            \[\lim_{x \to x_0}; f(x) - f(x_0) = \lim_{x \to x_0};\frac{f(x) - f(x_0)}{x-x_0}(x-x_0) = f'(x_0).0 = 0 \]
+    $f(x) = x^n$\\
+    \[f'(x) = \lim_{\Delta x \to 0}; \frac{(x + \Delta x)^n - x^n}{\Delta x} = \lim_{\Delta x \to 0}; \frac{(\binom n0 x^n \Delta x ^0 + \binom n1 x^n \Delta x ^1 +... ) - x^n}{\Delta x} = nx^{n-1} \]
 
-                    \paragraph{Derivatives of composed functions}
-
-                        \begin{align*} (u+v)'(x) &= \lim_{\Delta x \to 0}; \frac{(u+v)(x+\Delta x) - (u +v)(x)}{\Delta x}\\
-                        &= \lim_{\Delta x \to 0}; \frac{u(x+\Delta x) + v(x+\Delta x) - u(x) - v(x)}{\Delta x}\\
-                        &= u'(x) + v'(x)
-                        \end{align*}
-
-                        \begin{align*}
-                            (uv)' &= u'v + v'u\\
-                            (\frac{u}{v})' &= \frac{u'v - v'u}{v^2}
-                        \end{align*}
+    ~\\
+    $(f+g)'(x) = f'(x)+g'(x)$
 
 
-                        \[ \lim_{x \to 0}; \frac{\sin x}{x} = 1\]
-                        \[    \lim_{x \to 0}; \frac{\cos x -1}{x} = 0\]
+    \paragraph{Continuity}
+    ~\\
+    Notations : $f'(x) = \frac{dy}{dx} = \frac{df}{dx} = Df = \frac{d}{dx}f$ = y'\\
 
-                        \begin{align*}
-                            f'(x) &= \frac{d}{dx} \sin x\\
-                            &= \lim_{x+\Delta x} \frac{\sin(x+\Delta x) - \sin x}{\Delta x}\\
-                            &= \lim_{x+\Delta x} \frac{\sin x \cos \Delta x + \sin \Delta x \cos x - \sin x}{\Delta x}\\
-                            &= \lim_{x+\Delta x} \frac{\sin(\cos \Delta x -1)}{\Delta x} + \lim_{x+\Delta x} \frac{\cos x \sin \Delta x}{\Delta x}\\
-                            &= 0 + \cos x
-                        \end{align*}
+    \noindent \textit{Example : } 400 ft , $y = 400 - 16t^2$\\
+    $400 -16t^2 = 0$\\
+    $t = 5$\\
+    On average, -80 ft per second. But we want to know the instantaneous speed when the pumpkin hits the ground :\\
+    $f'(x) = -32t$\\
+    $f'(5) = -160 ft.s^{-1}$\\
 
-                    \paragraph{Chain rules}
-                        $ y= f(g(t))$\\
-                        \[ \frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dx} \]
+    $f(x)$ is continuous at $x_0$ if
+    \[ lim_{x \to x_0}; f(x) = f(x_0)  \Leftrightarrow \lim_{x \to x_0}; f(x) - f(x_0) = 0\]
+    \textbf{Theorem :}
+    If $f$ is differentiable at $x_0$ then $f$ is continuous at $x_0$
+    \[\lim_{x \to x_0}; f(x) - f(x_0) = \lim_{x \to x_0};\frac{f(x) - f(x_0)}{x-x_0}(x-x_0) = f'(x_0).0 = 0 \]
 
-                        $y = f(x) = \sin x$\\
-                        $x = g(t) = t^2$\\
-                        $y = sin(t^2)$\\
-                        \[ \frac{d}{dt}(\sin t^2) = (\frac{dy}{dx})(\frac{dx}{dt})=(\cos x)(2t) = \cos(t^2)2t \]
-                        $f(g(x))' = g'(x)f'(g(x))$
+    \paragraph{Derivatives of composed functions}
 
-                    \paragraph{Implicit differntiation}
+    \begin{align*} (u+v)'(x) &= \lim_{\Delta x \to 0}; \frac{(u+v)(x+\Delta x) - (u +v)(x)}{\Delta x}\\
+        &= \lim_{\Delta x \to 0}; \frac{u(x+\Delta x) + v(x+\Delta x) - u(x) - v(x)}{\Delta x}\\
+        &= u'(x) + v'(x)
+    \end{align*}
 
-                    $y = f(x) $\\
-                    $x^2 + y^2 = 1 $\\
-
-
-                    \begin{align*}
-                        \frac{d}{dx} (x^a) &= ax^{a-1}\\
-                        a &= m/n ; y = x^{m/n} ; y^n = x^m\\
-                        ny^{n-1}.\frac{dy}{dx} &= mx^{m-1}\\
-                        \frac{dy}{dx} &= \frac{m}{n} \frac{x^{m-1}}{y^{n-1}}\\
-                         &= \frac{m}{n} \frac{x^{m-1}}{x^{{m-1}^{n-1}}}\\
-                         &= \frac{m}{n} \frac{x^{m-1}}{x^{\frac{m(n-1)}{n}}}\\
-                         \frac{m}{n}x^{\frac{m}{n} -1} &= ax^{a-1}
-                    \end{align*}
-
-                    \begin{center}
-                        $\cos a + b = \sin a \cos b + \cos a \sin b$
-                        $\sin a+b = \cos a \cos b + \sin a \sin b$
-                    \end{center}
-
-                    We can note derivative with $D^n$ with $n$ the degree of the derivative.\\
-                    $D^2 x^n = n(n-1)x^{n-2}$ so generalizing :
-                    \begin{align*}
-                        D^{n-1} x^n &= n(n-1)...2 x^{n-(n-1)}\\
-                        &= n! x
-                    \end{align*}
-
-                    For a bacterial populaiton, $y_0$ is the initial site of the population, $t$ is the time in days. The bactérias double every days.\\
-                    $y(t) = 2^t y_0$\\~\\
-
-                    $A_0$ is the inital amount, $n$ the number of years, the interest rate is $5\%$.\\
-                    $A(n) = A_0 (1.05)^n$\\
-
-                    \begin{align*}
-                        \frac{d}{dx} a^x &= \lim {\Delta x \to 0} ; \frac{a^{x+\Delta x} - a^x}{\Delta x}\\
-                        &= \lim {\Delta x \to 0} ; \frac{a^x (a^{\Delta x} -1)}{\Delta x}\\
-                        &= a^x \lim {\Delta x \to 0} ; \frac{a^{\Delta x} -1}{\Delta x}\\
-                        with \frac{d}{dx} a^x = a^x M(a)\\
-                        \frac{d}{dx}a^x_{x=0} &= a^0 M(a) = M(a)\\
-                        So :
-                        \frac{d}{dx} e^x &= e^x
-                    \end{align*}
-                    $f(x) = 2^x$ initial function for wich we want to comute the derivative.\\
-                    $f(kx) = 2^{kx} = (2^k)^x = b^x$ (with $b=2^k$)\\
-                    So $\frac{d}{dx}b^x = kf'(kx)$
-                    \[ \frac{d}{dx}b^x_{x=0} = kf'(0) = M(2)k \]
-                    If $y=e^x$ then $\ln y = x$\\
-
-                    \begin{align*}
-                        \frac{d}{dx} \ln x\\
-                        w = \ln x \Rightarrow e^w = x\\
-                        \frac{d}{dx} e^w &= \frac{d}{dx} x = 1\\
-                        \frac{d}{dx} e^w \frac{dw}{dx} &= 1\\
-                        e^w \frac{dw}{dx} &= 1 \Rightarrow \\
-                        \frac{dw}{dx} &= \frac{1}{e^w} = \frac{1}{x}
-                    \end{align*}
-
-                    \begin{align*}
-                        \frac{d}{dx} a^x &= ?\\
-                        a^x &= (e^{\ln a})^x = e^{x\ln a}\\
-                        \frac{d}{dx} a^x &= e^{x\ln a} . \ln a\\
-                        &= a^x \ln a\\
-                        M(a) &= \ln a
-                    \end{align*}
-
-                    \begin{align*}
-                        \frac{d}{dx} u &= ?\\
-                        \frac{d}{dx} \ln u &= \frac{d \ln u}{du} . \frac{du}{dx} \\
-                        &= \frac{1}{u}.\frac{du}{dx}\\
-                        \frac{d}{dx} a^x = ? , u = a^x , \ln u = x\ln a \\
-                        (\ln u)' &= \ln a. \frac{u'}{u}\\
-                        &= \ln a . u'\\
-                        &= \ln a .u \\
-                        (a^x)' &= a^x \ln a
-                    \end{align*}
-
-        \subsection{Differential equations}
-
-            \subsection{Antiderivatives}
-            \label{sub:Antiderivatives}
-
-            $\int G(x)= g(x)dx $ and $G'(x)=g(x)$\\
-
-            \begin{align*}
-                \int \sin x dx &= \cos x + C\\
-                Find G(x) such as G'(x)= \sin x
-            \end{align*}
-
-            \begin{align*}
-                \int x^a dx &= \frac{x^{a+1}}{a+1}+C\\
-                (\frac{x^{a+1}}{a+1}+C)' &= \frac{1}{a+1}.(a+1).x^a + 0\\
-                &= x^a\\
-                ~\\
-                If a = -1, x^a = x^{-1} = \frac{1}{x}\\
-                \int \frac{dx}{x} &= \ln |x| + C\\
-                (\ln(-x))' &= \frac{1}{-x}.(-1)\\
-                &= \frac{1}{x}
-            \end{align*}
-
-            \textit{Theorem : } If $F' = G'$, then $F(x)=G(x)+C$ for all $x$.\\
-            \textit{Proof :} If $F' = G'$, then $(F - G)' = F' - G' = 0$\\
-            Hence, $F(x)-G(x)$ is a constant. Derivative is 0 $\rightarrow$ function is constant (follows from the mean value theorem).\\
-
-            \[
-                \label{Mean value theorem}
-                \frac{f(b) - f(a)}{b-a} = f'(c)~ ~ ~ ~
-                f ~differentiable ~for~ a~ < ~x ~< ~b ~ ~ ~ ~
-                f ~continuous ~for~ a \leq x \leq b
-            \]
-
-            \begin{align*}
-                \int x^3 (x^4 + 2)^5 dx &= \\
-                with~ u = x^4 +2 ~and ~du = 4x^3 dx
-                 &= \int \frac{u^5}{4}du\\
-                 &= \frac{1}{4}.\frac{1}{6}u^6+C\\
-                 &= \frac{u^6}{24}+C\\
-                 &= \frac{(x^4 +2)^6}{24}+C
-            \end{align*}
-
-            \textit{Example}
-            \begin{align*}
-                \int frac{dx}{x\ln x} &= \int \frac{du}{u}\\
-                &= \ln |u| + C\\
-                &= \ln |\ln x| +C\\
-                with~ u=\ln x, ~ du=\frac{1}{x}dx
-            \end{align*}
+    \begin{align*}
+        (uv)' &= u'v + v'u\\
+        (\frac{u}{v})' &= \frac{u'v - v'u}{v^2}
+    \end{align*}
 
 
-            %% Graph with exponential, logarithm.
+    \[ \lim_{x \to 0}; \frac{\sin x}{x} = 1\]
+    \[    \lim_{x \to 0}; \frac{\cos x -1}{x} = 0\]
 
-        \subsection{Linear Algebra}
+    \begin{align*}
+        f'(x) &= \frac{d}{dx} \sin x\\
+        &= \lim_{x+\Delta x} \frac{\sin(x+\Delta x) - \sin x}{\Delta x}\\
+        &= \lim_{x+\Delta x} \frac{\sin x \cos \Delta x + \sin \Delta x \cos x - \sin x}{\Delta x}\\
+        &= \lim_{x+\Delta x} \frac{\sin(\cos \Delta x -1)}{\Delta x} + \lim_{x+\Delta x} \frac{\cos x \sin \Delta x}{\Delta x}\\
+        &= 0 + \cos x
+    \end{align*}
+
+    \paragraph{Chain rules}
+    $ y= f(g(t))$\\
+    \[ \frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dx} \]
+
+    $y = f(x) = \sin x$\\
+    $x = g(t) = t^2$\\
+    $y = sin(t^2)$\\
+    \[ \frac{d}{dt}(\sin t^2) = (\frac{dy}{dx})(\frac{dx}{dt})=(\cos x)(2t) = \cos(t^2)2t \]
+    $f(g(x))' = g'(x)f'(g(x))$
+
+    \paragraph{Implicit differntiation}
+
+    $y = f(x) $\\
+    $x^2 + y^2 = 1 $\\
+
+
+    \begin{align*}
+        \frac{d}{dx} (x^a) &= ax^{a-1}\\
+        a &= m/n ; y = x^{m/n} ; y^n = x^m\\
+        ny^{n-1}.\frac{dy}{dx} &= mx^{m-1}\\
+        \frac{dy}{dx} &= \frac{m}{n} \frac{x^{m-1}}{y^{n-1}}\\
+        &= \frac{m}{n} \frac{x^{m-1}}{x^{{m-1}^{n-1}}}\\
+        &= \frac{m}{n} \frac{x^{m-1}}{x^{\frac{m(n-1)}{n}}}\\
+        \frac{m}{n}x^{\frac{m}{n} -1} &= ax^{a-1}
+    \end{align*}
+
+    \begin{center}
+        $\cos a + b = \sin a \cos b + \cos a \sin b$
+        $\sin a+b = \cos a \cos b + \sin a \sin b$
+    \end{center}
+
+    We can note derivative with $D^n$ with $n$ the degree of the derivative.\\
+    $D^2 x^n = n(n-1)x^{n-2}$ so generalizing :
+    \begin{align*}
+        D^{n-1} x^n &= n(n-1)...2 x^{n-(n-1)}\\
+        &= n! x
+    \end{align*}
+
+    For a bacterial populaiton, $y_0$ is the initial site of the population, $t$ is the time in days. The bactérias double every days.\\
+    $y(t) = 2^t y_0$\\~\\
+
+    $A_0$ is the inital amount, $n$ the number of years, the interest rate is $5\%$.\\
+    $A(n) = A_0 (1.05)^n$\\
+
+    \begin{align*}
+        \frac{d}{dx} a^x &= \lim {\Delta x \to 0} ; \frac{a^{x+\Delta x} - a^x}{\Delta x}\\
+        &= \lim {\Delta x \to 0} ; \frac{a^x (a^{\Delta x} -1)}{\Delta x}\\
+        &= a^x \lim {\Delta x \to 0} ; \frac{a^{\Delta x} -1}{\Delta x}\\
+        with \frac{d}{dx} a^x = a^x M(a)\\
+        \frac{d}{dx}a^x_{x=0} &= a^0 M(a) = M(a)\\
+        So :
+        \frac{d}{dx} e^x &= e^x
+    \end{align*}
+    $f(x) = 2^x$ initial function for wich we want to comute the derivative.\\
+    $f(kx) = 2^{kx} = (2^k)^x = b^x$ (with $b=2^k$)\\
+    So $\frac{d}{dx}b^x = kf'(kx)$
+    \[ \frac{d}{dx}b^x_{x=0} = kf'(0) = M(2)k \]
+    If $y=e^x$ then $\ln y = x$\\
+
+    \begin{align*}
+        \frac{d}{dx} \ln x\\
+        w = \ln x \Rightarrow e^w = x\\
+        \frac{d}{dx} e^w &= \frac{d}{dx} x = 1\\
+        \frac{d}{dx} e^w \frac{dw}{dx} &= 1\\
+        e^w \frac{dw}{dx} &= 1 \Rightarrow \\
+        \frac{dw}{dx} &= \frac{1}{e^w} = \frac{1}{x}
+    \end{align*}
+
+    \begin{align*}
+        \frac{d}{dx} a^x &= ?\\
+        a^x &= (e^{\ln a})^x = e^{x\ln a}\\
+        \frac{d}{dx} a^x &= e^{x\ln a} . \ln a\\
+        &= a^x \ln a\\
+        M(a) &= \ln a
+    \end{align*}
+
+    \begin{align*}
+        \frac{d}{dx} u &= ?\\
+        \frac{d}{dx} \ln u &= \frac{d \ln u}{du} . \frac{du}{dx} \\
+        &= \frac{1}{u}.\frac{du}{dx}\\
+        \frac{d}{dx} a^x = ? , u = a^x , \ln u = x\ln a \\
+        (\ln u)' &= \ln a. \frac{u'}{u}\\
+        &= \ln a . u'\\
+        &= \ln a .u \\
+        (a^x)' &= a^x \ln a
+    \end{align*}
+
+    \subsection{Differential equations}
+
+    \subsection{Antiderivatives}
+    \label{sub:Antiderivatives}
+
+    $\int G(x)= g(x)dx $ and $G'(x)=g(x)$\\
+
+    \begin{align*}
+        \int \sin x dx &= \cos x + C\\
+        Find G(x) such as G'(x)= \sin x
+    \end{align*}
+
+    \begin{align*}
+        \int x^a dx &= \frac{x^{a+1}}{a+1}+C\\
+        (\frac{x^{a+1}}{a+1}+C)' &= \frac{1}{a+1}.(a+1).x^a + 0\\
+        &= x^a\\
+        ~\\
+        If a = -1, x^a = x^{-1} = \frac{1}{x}\\
+        \int \frac{dx}{x} &= \ln |x| + C\\
+        (\ln(-x))' &= \frac{1}{-x}.(-1)\\
+        &= \frac{1}{x}
+    \end{align*}
+
+    \textit{Theorem : } If $F' = G'$, then $F(x)=G(x)+C$ for all $x$.\\
+    \textit{Proof :} If $F' = G'$, then $(F - G)' = F' - G' = 0$\\
+    Hence, $F(x)-G(x)$ is a constant. Derivative is 0 $\rightarrow$ function is constant (follows from the mean value theorem).\\
+
+    \[
+    \label{Mean value theorem}
+    \frac{f(b) - f(a)}{b-a} = f'(c)~ ~ ~ ~
+    f ~differentiable ~for~ a~ < ~x ~< ~b ~ ~ ~ ~
+    f ~continuous ~for~ a \leq x \leq b
+    \]
+
+    \begin{align*}
+        \int x^3 (x^4 + 2)^5 dx &= \\
+        with~ u = x^4 +2 ~and ~du = 4x^3 dx
+        &= \int \frac{u^5}{4}du\\
+        &= \frac{1}{4}.\frac{1}{6}u^6+C\\
+        &= \frac{u^6}{24}+C\\
+        &= \frac{(x^4 +2)^6}{24}+C
+    \end{align*}
+
+    \textit{Example}
+    \begin{align*}
+        \int frac{dx}{x\ln x} &= \int \frac{du}{u}\\
+        &= \ln |u| + C\\
+        &= \ln |\ln x| +C\\
+        with~ u=\ln x, ~ du=\frac{1}{x}dx
+    \end{align*}
+
+
+    %% Graph with exponential, logarithm.
+
+    \subsubsection{Differential equations}
+
+    $\frac{dy}{dx} = f(x)$\\
+    $y = \int f(x)dx$\\
+
+    \textit{Example :}\\
+    \begin{align*}
+        \frac{d}{dy}y + xy &= 0 \\
+        \Leftrightarrow \frac{dy}{dx}&=-xy\\
+        \Rightarrow \frac{dy}{y} &= -xdx\\
+        \int \frac{dy}{y} &= -\int xdx \\
+        \ln |y| &= - \frac{x^2}{2}+C\\
+        |y| &= e^{-\frac{x^2}{2}+C} \\
+        &= e^{-\frac{x^2}{2}}.A ~ with ~ A=e^C
+    \end{align*}
+
+    \textit{Generalisation :}
+    \begin{align*}
+        \frac{dy}{dx} &= f(x)g(y)\\
+        \frac{dy}{g(y)} &= f(x)dx\\
+        H(y) &= F(x) +C \\
+        y &= H^{-1}(F(x)+C)
+    \end{align*}
+
+
+
+    \subsection{Linear Algebra}
 
 \end{document}
