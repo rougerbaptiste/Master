@@ -182,13 +182,43 @@
             \subsection{Antiderivatives}
             \label{sub:Antiderivatives}
 
-            $G(x)= g(x)dx $ and $G'(x)=g(x)$\\
+            $\int G(x)= g(x)dx $ and $G'(x)=g(x)$\\
 
             \begin{align*}
-                \sin x dx &= \cos x + C\\
+                \int \sin x dx &= \cos x + C\\
                 Find G(x) such as G'(x)= \sin x
             \end{align*}
 
+            \begin{align*}
+                \int x^a dx &= \frac{x^{a+1}}{a+1}+C\\
+                (\frac{x^{a+1}}{a+1}+C)' &= \frac{1}{a+1}.(a+1).x^a + 0\\
+                &= x^a\\
+                ~\\
+                If a = -1, x^a = x^{-1} = \frac{1}{x}\\
+                \int \frac{dx}{x} &= \ln |x| + C\\
+                (\ln(-x))' &= \frac{1}{-x}.(-1)\\
+                &= \frac{1}{x}
+            \end{align*}
+
+            \textit{Theorem : } If $F' = G'$, then $F(x)=G(x)+C$ for all $x$.\\
+            \textit{Proof :} If $F' = G'$, then $(F - G)' = F' - G' = 0$\\
+            Hence, $F(x)-G(x)$ is a constant. Derivative is 0 $\rightarrow$ function is constant (follows from the mean value theorem).\\
+
+            \[
+                \label{Mean value theorem}
+                \frac{f(b) - f(a)}{b-a} = f'(c)~ ~ ~ ~
+                f ~differentiable ~for~ a~ < ~x ~< ~b ~ ~ ~ ~
+                f ~continuous ~for~ a \leq x \leq b
+            \]
+
+            \begin{align*}
+                \int x^3 (x^4 + 2)^5 dx &= \\
+                with~ u = x^4 +2 ~and ~du = 4x^3 dx
+                 &= \int \frac{u^5}{4}du\\
+                 &= \frac{1}{4}.\frac{1}{6}u^6+C\\
+                 &= \frac{u^6}{24}+C\\
+                 &= \frac{(x^4 +2)^6}{24}+C
+            \end{align*}
 
 
             %% Graph with exponential, logarithm.

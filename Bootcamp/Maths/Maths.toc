@@ -9,4 +9,5 @@
 \contentsline {paragraph}{Chain rules}{3}
 \contentsline {paragraph}{Implicit differntiation}{4}
 \contentsline {subsection}{\numberline {1.2}Differential equations}{6}
-\contentsline {subsection}{\numberline {1.3}Linear Algebra}{6}
+\contentsline {subsection}{\numberline {1.3}Antiderivatives}{6}
+\contentsline {subsection}{\numberline {1.4}Linear Algebra}{7}
