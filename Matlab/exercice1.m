@@ -1,1 +1,0 @@
-round(b * chiara + a)
