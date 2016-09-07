@@ -255,6 +255,40 @@
         y &= H^{-1}(F(x)+C)
     \end{align*}
 
+    \textit{Examples :}
+    \begin{align*}
+        \frac{dy}{dx} &= (2x+5)^4\\
+        y &= \int (2x+5)^4 dx\\
+        &= \frac{1}{10}(2x+5)^5 +C \text{If we know that }y(0)=1\\
+        1 &= \frac{1}{10}(2\times 0 + 5)^5 +C \\
+        \Rightarrow C &= 1-\frac{5^5}{10}
+    \end{align*}
+
+    \begin{align*}
+        \frac{dy}{dx}&=(y+1)^{-1}\\
+        \frac{dy}{(y+1)^{-1}} &= dx\\
+        \int (y+1)dy &= \int dx\\
+         \frac{y^2}{2}+y &= x + C
+    \end{align*}
+
+    \begin{align*}
+        \frac{dy}{dx} &= xy^2\\
+        \int y^{-2}dy &= \int xdx\\
+        -y^{-1} &= \frac{x^2}{2} +C\\
+        y &= - \frac{1}{\frac{x^2}{2}+C}
+    \end{align*}
+
+    \begin{align*}
+        \frac{dy}{dx} &= 4xy \text{With }y(1)=3, \text{find } y(3)\\
+        \frac{dy}{y} &= 4x dx\\
+        \ln |y| &= \frac{4}{2}x^2 +C\\
+        \text{for }y(1)=3 ~~ 2+C &= ln 3 \\
+        C &= \ln 3 -2
+        \text{So we have :} \ln |y| &= 2 \times 3^2 + \ln 3 -2\\
+        &= 16 + \ln 3\\
+        y &= e^{16 + \ln 3}  
+    \end{align*}
+
 
 
     \subsection{Linear Algebra}
