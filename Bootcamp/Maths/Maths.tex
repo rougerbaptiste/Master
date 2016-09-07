@@ -116,8 +116,40 @@
                          \frac{m}{n}x^{\frac{m}{n} -1} &= ax^{a-1}
                     \end{align*}
 
+                    \begin{center}
+                        $\cos a + b = \sin a \cos b + \cos a \sin b$
+                        $\sin a+b = \cos a \cos b + \sin a \sin b$
+                    \end{center}
 
         \subsection{Differential equations}
+
+            We can note derivative with $D^n$ with $n$ the degree of the derivative.\\
+            $D^2 x^n = n(n-1)x^{n-2}$ so generalizing :
+            \begin{align*}
+                D^{n-1} x^n &= n(n-1)...2 x^{n-(n-1)}\\
+                &= n! x
+            \end{align*}
+
+            For a bacterial populaiton, $y_0$ is the initial site of the population, $t$ is the time in days. The bactérias double every days.\\
+            $y(t) = 2^t y_0$\\~\\
+
+            $A_0$ is the inital amount, $n$ the number of years, the interest rate is $5\%$.\\
+            $A(n) = A_0 (1.05)^n$\\
+
+            \begin{align*}
+                \frac{d}{dx} a^x &= \lim {\Delta x \to 0} ; \frac{a^{x+\Delta x} - a^x}{\Delta x}\\
+                &= \lim {\Delta x \to 0} ; \frac{a^x (a^{\Delta x} -1)}{\Delta x}\\
+                &= a^x \lim {\Delta x \to 0} ; \frac{a^{\Delta x} -1}{\Delta x}\\
+                with \frac{d}{dx} a^x = a^x M(a)\\
+                \frac{d}{dx}a^x_{x=0} &= a^0 M(a) = M(a)\\
+                So :
+                \frac{d}{dx} e^x &= e^x
+            \end{align*}
+            $f(x) = 2^x$ initial function for wich we want to comute the derivative.\\
+            $f(kx) = 2^{kx} = (2^k)^x = b^x$ (with $b=2^k$)\\
+            So $f'(kx) = kf'(kx)$
+            \[ \frac{d}{dx}b^x_{x=0} = kf'(0) = M(2)k \]
+            If $y=e^x$ then $\ln y = x$
 
         \subsection{Linear Algebra}
 
