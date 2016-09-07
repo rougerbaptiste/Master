@@ -1,6 +1,6 @@
 baptiste = round(b * chiara + ceil(a));
 
-t = linspace(0,20,11);
+t = linspace(0,20,11); % same as [0:2:20]
 t = t';
 u = linspace(0,20,21);
 
