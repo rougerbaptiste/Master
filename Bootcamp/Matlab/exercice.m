@@ -15,3 +15,11 @@ q*z2
 % The two vector can be multiplied as matrix as they are the same length.
 
 % rand allows to pick a random number beteween 0 and 1.
+
+clear
+load myvariables.mat weird
+
+weird(5) = weird(1) + weird(2);
+weird(6) = rand;
+weird = weird*length(weird);
+weird
