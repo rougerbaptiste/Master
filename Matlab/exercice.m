@@ -13,3 +13,5 @@ z2 = [-2;4;1;-5];
 z2*q
 q*z2
 % The two vector can be multiplied as matrix as they are the same length.
+
+% rand allows to pick a random number beteween 0 and 1.
