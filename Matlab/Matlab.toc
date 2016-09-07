@@ -1,0 +1,5 @@
+\select@language {english}
+\contentsline {part}{I\hspace {1em}Courses}{2}
+\contentsline {section}{\numberline {1}First session}{2}
+\contentsline {part}{II\hspace {1em}Exercices}{2}
+\contentsline {section}{\numberline {2}First session}{2}
