@@ -42,3 +42,9 @@ disp(f);
 A=magic(6);
 disp(A);
 disp(A(1:2,1:2));
+disp(A(3:5,:));
+
+% we can concatenate matrix using [ m ; n] (row on row) and with ',' for columns.
+A=[1,3,5;2,4,6];
+B=[A(:,1),A(:,3)];
+disp(B);
