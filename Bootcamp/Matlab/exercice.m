@@ -1,9 +1,10 @@
 load myvariables
 baptiste = round(b * chiara + ceil(a));
 
-t = linspace(0,20,11); % same as [0:2:20]
-t = t';
-u = linspace(0,20,21);
+%t = linspace(0,20,11); % same as [0:2:20]
+%t = t';
+t=[2:2:20]';
+u = [20:-1:0];
 
 z = [-2;4;1;-5;10];
 q = [3,9,0,2];
