@@ -18,8 +18,10 @@ q*z2
 
 % rand allows to pick a random number beteween 0 and 1.
 
-clear
+%clear
 load myvariables.mat weird
+
+z2 = [-2;4;1;-5];
 
 weird(5) = sum(weird(1:2));
 weird(6) = round(rand*10);
