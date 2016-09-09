@@ -62,6 +62,25 @@ If N is large enough, distribution of position is a binomial distribution.\\
 
 If we say that the boxes have a $l$ length, then $x = a \times l$, $t_0$ is the time delay between successive jumps. So $\frac{t}
 {t_0} = N$
+\[ \langle x \rangle = \langle a \rangle l = 0 \]
+\begin{align*}
+    \langle x^2 \rangle &= \langle a^2 \rangle l^2 \\
+    &= l^2 N \\
+    &= t\frac{l^2}{t_0}\\
+    &= 2t\frac{l^2}{2t_0}\\
+    So ~ D &= \frac{l^2}{2t_0}
+\end{align*}
+
+\textbf{Example :} \\
+\begin{itemize}
+    \item $D = 100\mu m ^2 /s$
+    \item $l_{bacteria} = 1 \mu m$
+    \item $l_{cell} = 20 \mu m$
+    \item $l_{arm} = 1m$
+\end{itemize}
+\[ t_{bacteria} = \frac{l^2}{2D} = \frac{(1 \mu m)^2}{2(100\mu m ^2 /s)} = 5 ms\]
+\[ t_{cell} = \frac{l^2}{2D} = \frac{(20 \mu m)^2}{2(100\mu m ^2 /s)}= 2s \]
+\[ t_{arm} = \frac{l^2}{2D} = \frac{(1m)^2}{2(100\mu m ^2 /s)}= 300 years \]
 
 
 \end{document}
