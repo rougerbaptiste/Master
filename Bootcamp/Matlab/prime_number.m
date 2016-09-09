@@ -24,6 +24,7 @@ for i=2:max
         primes(end +1)=i
         sum = sum + i;
     end
+    disp(primes);
 end
 
 disp(primes);
