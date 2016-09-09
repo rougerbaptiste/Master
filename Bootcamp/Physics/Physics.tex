@@ -27,9 +27,41 @@ carles.blanch-mercader@curie.fr
 
 \newpage
 
+\part{Brownian motion}
 
+Diffusion give rise to \emph{material transport}. It gives a quantitative understanding of many phenomenon (permeability...).
 
+\section{Historical aspects :}
+\begin{description}
+    \item [1834 :] Clapeyron proposed a phenomenological equation for the ideal gas : $PV = n R T$, \\$PV = N.K_B .T$ (N : number of particules, $K_B$ Boltzman constant $1.38\times 10^{-23} \frac{kg . m}{K . s^2})$
+    \item [1828 :] Brown : studied pollen that was moving
+    \item [1905 :] Einstein : $\langle x^2\rangle = 2DT$ (D : diffusion coefficient)
+    \item [1908 :] Perrin : confirmed the Einstein guess
+\end{description}
 
+\section{Random-walk}
+
+Simplest model that describes Brownian motion. A particle has the same probabiblity to move to the right and to the left. After two jumps, there is one way to 2 ($\frac{1}{4}$) and -2 ($\frac{1}{4}$), and 2 ways to 0 ($\frac{1}{2}$).\\
+\[ \langle a \rangle = \frac{1}{m} \sum ^m _{i=1} a_i =\sum ^m _{i=1} p_ia_i \]
+\[ \langle a^2 \rangle = \frac{1}{m} \sum ^m _{i=1} a_i^2 \]
+$\langle a \rangle$ the average position, with m the number of realisations, i the i-th realisation and $a_i$ the i-th realisation.\\
+In our example : $\langle a \rangle = \frac{1}{4} (2 + {-2} + 0 + 0) = 0$ and $\langle a^2 \rangle = \frac{1}{4} (2^2 + {-2}^2 + 0^2 + 0^2) = 2$\\
+
+In the 3 jumps case :
+\begin{itemize}
+    \item 1 way to 3
+    \item 1 way to -3
+    \item 3 ways to 1
+    \item 3 ways to -1
+\end{itemize}
+$\langle a \rangle = \frac{1}{8}( 3 + {-3} + 3 \times 1 + 3\times {-1} ) = 0$ and $\langle a^2 \rangle = \frac{1}{8}( 3^2 + {-3}^2 + (3 \times 1)^2 + (3\times {-1})^2 )=3$\\
+
+\[ N-jumps = \langle a \rangle = 0\text{ and }\langle a^2 \rangle = N\]
+
+If N is large enough, distribution of position is a binomial distribution.\\
+
+If we say that the boxes have a $l$ length, then $x = a \times l$, $t_0$ is the time delay between successive jumps. So $\frac{t}
+{t_0} = N$
 
 
 \end{document}
