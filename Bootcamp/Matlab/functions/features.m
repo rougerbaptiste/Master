@@ -1,8 +1,5 @@
-function features(M,n)
-    disp('Number of elements : ');
-    disp(numel(M));
-    disp('Number of nonzero elements');
-    disp(length(find(M)));
-    disp('Number of elements greater than n : ');
-    disp(length(M(M>n)))
+function [a,b,c] = features(M,n)
+    a= numel(M);
+    b= length(find(M));
+    c = length(M(M>n));
 end
