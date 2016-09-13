@@ -82,5 +82,66 @@ If we say that the boxes have a $l$ length, then $x = a \times l$, $t_0$ is the 
 \[ t_{cell} = \frac{l^2}{2D} = \frac{(20 \mu m)^2}{2(100\mu m ^2 /s)}= 2s \]
 \[ t_{arm} = \frac{l^2}{2D} = \frac{(1m)^2}{2(100\mu m ^2 /s)}= 300 years \]
 
+\emph{Q :} How long does it take to tRNA to find a ribosome ?\\
+\begin{itemize}
+    \item $N_{tRNA} = 200 000$ molecules / bacteria
+    \item the length of the bacteria is around $1\mu m$ long
+    \item The volume of the bacteria : $V = 1 \mu m^3$
+    \item $C_{tRNA} = \frac{200 000}{1}$
+    \item $d=\sqrt[3]{\frac{1}{C_{tRNA}}} \approx 0.016\mu m$
+    \item So $D= 100 \mu m /s^2 \rightarrow t=\frac{1^2}{2D} \approx 1\mu s$
+    \item But ribosomes synthetize at 40 nucleotides per seconds, the the synthesis is about of 2 seconds for a 80 mucleotides tRNA.
+\end{itemize}
+So the ribosomes binds quickly to the tRNA, and takes longer to synthesize.\\
+
+What is the concentration ? $C=\frac{Number~of~particles}{Volume} = 200 000 molec/\mu m$. Although, the concentration is not uniform is the bacteria.\\
+What is flux ($j$) ? Flux the number of particules that pass through an area A per unit of time. $j \propto 2-1 = 1$
+\[ \frac{\#~of~particles}{\text{time step} \times \text{area of the plane}} \]
+\emph{Example :}
+\begin{itemize}
+    \item $N_{H_2 O} = 10^{10} molecules$
+    \item $T = 3000 sec$
+    \item $A = 6 \mu m^2$
+\end{itemize}
+\[ j =  \frac{10 ^ {10} }{3\times 10^3 \times 6} = 10^6 \frac{molecules}{s.\mu m^2} \]
+
+Fick's Law
+\[j = -D\frac{\partial c}{\partial x} \]
+~\\
+Darcy's Law
+\[ v= -d\frac{\partial P}{\partial x} \text{d : mobility coeef} \]
+~\\
+Ohm's Law
+\[ \overrightarrow{j_E} = \sigma \overrightarrow{E} = -\sigma \frac{\partial V}{\partial x} \text{ ~~~sigma : electric conductivity, V : electric potential} \]
+~\\
+Fourier's Law
+\[ j_T = -K\frac{\partial T}{\partial x} \text{~~~T : temperature, K : thermal conductivity}\]
+~\\
+
+Random walk :
+\[ j = \frac{particles(\rightarrow)-particles(\leftarrow)}{t_0 A} \]
+\[ particles(\rightarrow) = N(x)\times \frac{1}{2} = C(x)V_{Box}\frac{1}{2} = C(x)Al\frac{1}{2} \]
+\[ particles (\leftarrow) = N(x+l)\frac{1}{2} = C(x+l)Al\frac{1}{2} \]
+
+
+\begin{align*}
+    j &= \frac{C(x)\frac{l}{2} - C(x+l)\frac{l}{2}}{t_0}\\
+    &= \frac{l^2}{2t_0}\left( \frac{C(x) - C(x+l)}{l} \right)\\
+    &= -D\frac{\partial C}{\partial x}
+\end{align*}
+
+~\\
+Law of mass conservation : $\#part@_{t+t_0} = \#part@_t + \#part_{entering} - \#part_{leaving}$\\
+$\#part_{entering} = j(x)At_0$, $part_{leaving} = j(x+l)At_0$\\
+$\#part@_{t+t_0} = C(x,t+t_0)lA$
+
+\begin{align*}
+(...) &= \left( \frac{C(x,t+t_0) - C(x,t)}{t_0} \right) lAt_0\\
+&= \frac{\partial C}{\partial t}lAT_0\\
+\frac{\partial C}{\partial t} &= -\frac{\partial j}{\partial x}
+\end{align*}
+
+\[ \frac{\partial C}{\partial t} = D\frac{\partial^2C}{\partial x^2} \]
+
 
 \end{document}
