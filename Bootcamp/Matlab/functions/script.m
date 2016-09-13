@@ -38,7 +38,8 @@ disp(e);
 %%%%
 % Function features()
 matrix = magic(6);
-[a,b,c] = features(matrix,5)
+disp(matrix);
+[a,b,c] = features(matrix,15);
 disp('Number of elements : ');
 disp(a);
 disp('Number of nonzero elements');
