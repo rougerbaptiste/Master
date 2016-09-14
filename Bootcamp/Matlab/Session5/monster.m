@@ -1,4 +1,4 @@
 function out = monster(a)
-	out{1} = a;
+	out{length(size(a))} = a;
 	
 end
