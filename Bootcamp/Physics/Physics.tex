@@ -155,7 +155,25 @@ C &= -Kx \text{with K the slope of the conentration gradient}\\
 \end{align*}
 
 \emph{Example 3 :} There is a film of water, and a drop of ink on it. We just take a plan to consider the diffusion. $d$ is the size of the drop.
+\begin{align*}
+    C(x,t) &= \frac{N}{\sqrt{4 \pi Dt}} e^{\frac{x^2}{4Dt}}
+\end{align*}
 
+\emph{Example 4 :} There are centain molecules inside a cell. There is much more molecules outside the cell. There is a flux a the interface of the membrane.
+\begin{align*}
+    j_M &= -P_m \Delta C \text{ with : } \Delta C = C_{ext} - C_{int}\\
+    R &= 10 \mu m ; P_m = 20 \mu m/s\\
+    \frac{\partial C_i}{\partial t} &= \frac{j_m A}{V} = \frac{P_mA}{V} (C_e -C_i)\\
+    \frac{\partial C_i}{\partial t} &= -\frac{P_m A}{V}C_i + \frac{P_m A}{V}C_e \\
+\end{align*}
+\begin{align*}
+    \tau &= \frac{V}{P_m A} = \frac{L^3}{\frac{L}{T}{L^2}} = T\\
+    &= \frac{\frac{4}{3}\pi R^3}{P_m 4 \pi R^2} = \frac{R}{3P_m} = \frac{1}{6}sec
+\end{align*}
+\begin{align*}
+    \frac{\partial C_i}{\partial t} &= -\frac{1}{t}(C_i - C_e) \\
+    \rightarrow C_i(t) &= C_e - C_e e^{-t/\tau}
+\end{align*}
 
 
 
