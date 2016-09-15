@@ -175,7 +175,52 @@ C &= -Kx \text{with K the slope of the conentration gradient}\\
     \rightarrow C_i(t) &= C_e - C_e e^{-t/\tau}
 \end{align*}
 
+\section{Bias Random walk}
 
+This is the case where the probabiblity of going left is not the same than to go right. $K_+ \not= K_-$
+\[ F = \gamma v \rightarrow v=\frac{F}{\gamma} \text{ avec } \gamma \text{ le coefficient de friction}\]
+
+\begin{align*}
+    j_{New} &= vC\\
+    j &= -D \frac{\partial C}{\partial c} + vc\\
+\end{align*}
+
+\begin{align*}
+    \Delta x = v\Delta t \text{ and } N = C\Delta x A = cA\Delta t v\\
+    j &= \frac{\#_{part}}{time.area} = \frac{CvA\Delta t}{\Delta t A}\\
+    &= Cv = c\frac{F}{\gamma}\\
+\end{align*}
+\begin{align*}
+    j_{tot} &= -D \frac{\partial C}{\partial x} + Cv\\
+    \text{Equilibrium situation :}\\
+    0 &= -D\frac{\partial C}{\partial x} + C\frac{F}{\gamma}\\
+    \text{With the force } F&=cst\\
+    \frac{\partial C}{\partial x} &= \frac{CF}{\gamma} ; \frac{\partial C}{\partial x} = \frac{CF}{\gamma D}\\
+    \frac{\partial C}{\partial x} &= \frac{C}{\lambda} \text{ as } \lambda = \frac{\gamma D}{F} \\
+    \frac{\partial C}{\partial x} = \frac{C}{\lambda} ; \frac{\partial C}{C} = \frac{\partial x}{\lambda}\\
+    ~~~\\
+    \int \frac{\partial C}{C} &= \ln C - \ln C_0 = \ln \frac{C}{C_0}\\
+    \int \frac{\partial x}{\lambda} &= \frac{x}{\lambda} \\
+    ~~~\\
+    \text{So : } \ln\frac{C}{C_0} = \frac{x}{\lambda}\\
+    C &= C_0 e^{x/\lambda}
+\end{align*}
+
+Same case as above, but with $F = -Kx$\\
+\begin{align*}
+    j_{Tot} = 0 = -D\frac{\partial C}{\partial x} + C\frac{F}{\gamma} &= -D\frac{\partial C}{\partial x} - \frac{CKx}{\gamma} = C\\
+    \text{Solution :}\\
+    D\frac{\partial C}{\partial x} &= -\frac{KCx}{\gamma}; \frac{\partial C}{\partial x} = -\frac{KCx}{\gamma D}\\
+    \frac{dC}{dx} &= \frac{-KCx}{\gamma D} ; \frac{dC}{C} = -\frac{KCx}{\gamma D}dx;\\
+    ~~~~~\\
+    \int \frac{dC}{C} &= \ln C - \ln C_0\\
+    \int \frac{-Kx}{\gamma D}dx &= -\frac{K}{\gamma D}\frac{x^2}{2}\\
+    ~~~~~\\
+    \ln \frac{C}{C_0} &= -\frac{Kx^2}{2\gamma D} \Rightarrow \\
+    C &= C_0 e^{\frac{-Kx}{2\gamma D}}
+\end{align*}
+
+We expect that : $ \sigma ^2 = \frac{\gamma D}{K}$
 
 
 \end{document}

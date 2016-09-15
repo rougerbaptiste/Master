@@ -2,3 +2,4 @@
 \contentsline {part}{I\hspace {1em}Brownian motion}{2}
 \contentsline {section}{\numberline {1}Historical aspects :}{2}
 \contentsline {section}{\numberline {2}Random-walk}{2}
+\contentsline {section}{\numberline {3}Bias Random walk}{5}
