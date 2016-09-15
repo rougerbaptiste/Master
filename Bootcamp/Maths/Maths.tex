@@ -293,4 +293,218 @@
 
     \subsection{Linear Algebra}
 
+    \part{Matrices}
+
+    \section{Vectors}
+    $ \overrightarrow{v} = (v_1,v_2,v_3...)$. \\
+    \[
+        \overrightarrow{u} + \overrightarrow{v} =
+        \left(\begin{array}{c}
+            x_u + x_v \\
+            y_u + y_v
+        \end{array}
+        \right)
+    \]
+
+    \[
+        \overrightarrow{u} . \overrightarrow{v} = ||u||\times ||v|| \times \cos \theta = (x_ux_v + y_uy_v)
+    \]
+
+    \[
+    \left(\begin{array}{cc}
+        1 & 0 \\
+        0 & 2
+    \end{array} \right)
+    \left(\begin{array}{c}
+    4 \\
+    3
+    \end{array} \right)
+    =
+    \left(\begin{array}{c}
+    4 \\
+    6
+    \end{array}\right)
+    \]
+
+    \section{Matrices}
+
+    \[ matrix~A =
+    \left(\begin{array}{ccc}
+        a_{11} & a_{12} & ... \\
+        a_{21} & a_{22} & ...\\
+        a_{31} & ...
+    \end{array} \right)
+    \]
+
+    Tu multiply 2 matrices A and B : we need : $m \times n$ and $n\times p$ and $A.B \not= B.A$\\
+
+    \[
+    \left(\begin{array}{cc}
+        7 & 4\\
+        A & 2
+    \end{array} \right)
+    \left(\begin{array}{ccc}
+        4 & 2 & 1\\
+        -1 & 0 & 8
+    \end{array} \right)
+    =
+    \left(\begin{array}{ccc}
+        7.4 + 4.-1 & 7.2+4.0 & 7.1+4.8\\
+        1.4+2.-1 & 1.2+2.0 & 1.1+2.8
+    \end{array} \right)
+    =
+    \left(\begin{array}{ccc}
+        24 & 14 & 39\\
+        2 & 2 & 17
+    \end{array} \right)
+    \]
+
+    \[
+    A= \left(\begin{array}{ccc}
+        1 & 2 & 3\\
+        4 & 5 & 6\\
+        7 & 8 & 9
+    \end{array} \right)
+    ; B =
+    \left(\begin{array}{cc}
+        3 & 2\\
+        -5 & 1\\
+        8 & 0
+    \end{array} \right)
+    \]
+    \[
+        A.B =
+        \left(\begin{array}{cc}
+            20 & 4\\
+            35 & 13\\
+            53 & 22
+        \end{array} \right)
+    \]
+
+    \section{Square matrices}
+    The identity matrix is a matrix the is empty but for 1 on her diagonal.\\
+    $A.I= A ; I.A = A$\\
+    Determinant of A :
+    \[
+    A=
+    \left(\begin{array}{cc}
+        a & b \\
+        c & d
+    \end{array} \right)
+    \]
+    \[
+    det(A)=
+    \left|\begin{array}{cc}
+        a & b \\
+        c & d
+    \end{array} \right|
+    = a.d - b.c
+    \]
+
+    \[
+    det(A)=
+    \left|\begin{array}{ccc}
+        a & b & c\\
+        d & e &f\\
+        g & h & i
+    \end{array} \right|
+    = a.
+    \left|\begin{array}{cc}
+        e & f \\
+        h & i
+    \end{array} \right|
+    -b.
+    \left|\begin{array}{cc}
+        d & f \\
+        g & i
+    \end{array} \right|
+    +c.
+    \left|\begin{array}{cc}
+        d & e \\
+        g & h
+    \end{array} \right|
+    \text{ and then do it again...}
+    \]
+
+
+    \[
+    \overrightarrow{u}=
+    \left|\begin{array}{c}
+        u_1\\
+        u_2\\
+        u_3
+    \end{array} \right|,
+    \overrightarrow{v}=
+    \left|\begin{array}{c}
+        v_1\\
+        v_2\\
+        v_3
+    \end{array} \right|
+    \]
+
+    \[
+        \overrightarrow{u} \otimes \overrightarrow{v}=
+        \left|\begin{array}{ccc}
+            \hat{x} & \hat{y} & \hat{z}\\
+            u_1 & u_2 & u_3\\
+            v_1 & v_2 & v_3
+        \end{array} \right| =
+            \hat{x}n - \hat{y}m + \hat{z}p
+    \]
+    With n,m and p the determinants of the matrix.
+
+    \section{Eigenvalues and eigenvectors}
+
+    \[ A\overrightarrow{v} = k\overrightarrow{v} ? \]
+    A matrix, $\overrightarrow{v}$ a vector and $k$ a number.\\
+    \begin{align*}
+        A\overrightarrow{v} &= k\overrightarrow{v}\\
+        A\overrightarrow{v} &= kI\overrightarrow{v}\\
+        A\overrightarrow{v}-kI\overrightarrow{v}&=0\\
+        (A-kI)\overrightarrow{v} &= 0\\
+        \text{So : } det(A-kI) &= 0
+    \end{align*}
+
+    \begin{align*}
+        A=
+        \left(\begin{array}{cc}
+            0 & 1\\
+            -2 & 3
+        \end{array} \right)&=
+        \left|\begin{array}{cc}
+            -k & 1\\
+            -2 & 3-k
+        \end{array} \right|\\
+        &=
+        -k\times(3-k) - 1 \times -2 = (k-2)(k-1) =0\\
+        \text{So there is two eigenvalues : } k_1 &= 2 \text{ and } k_2 = 1
+    \end{align*}
+
+    \begin{align*}
+        k &= 1\\
+        A\overrightarrow{v} &= 1\overrightarrow{v}\\
+        (A-1I)\overrightarrow{v}&=0\\
+        \left(\begin{array}{cc}
+            -1 & 1\\
+            -2 & 2
+        \end{array} \right)
+        \left(\begin{array}{c}
+            v_1\\
+            v_2
+        \end{array} \right) &= 0\\
+        \left{ \begin{array}{c}
+            -1v_1 + v_2 = 0\\
+            -2v_1 + 2v_2 =0
+        \end{array}\\
+        v_2 = v1\\
+        v_1\begin{array}{c}
+            a\\
+            a
+        \end{array} &=
+        a\begin{array}{c}
+            1\\
+            1
+        \end{array}
+    \end{align*}
+
 \end{document}
