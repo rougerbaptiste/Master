@@ -29,7 +29,7 @@ a = 100;
 b = 100;
 c = 0;
 
-% Duration of the simulation [Units must be the same than the rate constants']
+% Duration of the simulation [Units must be the same than the rate constants]
 TSpan = 100;
 
 % Pick a timestep
@@ -99,3 +99,5 @@ subplot(3 , 1 , 3)
 plot(t_vec , c_vec)
 ylabel('c', 'fontsize', 14);
 xlabel('Time' , 'fontsize' , 14);
+
+pause;
