@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{mathtools}
 
 \usepackage[numbered, framed]{mcode}
 
@@ -49,5 +50,18 @@ It is better to put semicolumns at the end of instructions. It signifies Matlab 
 
 
 
+
+
+
+\part{Differential equations}
+
+\begin{align*}
+a \xrightarrow{k_1} b \\
+\text{So } a + b \xrightarrow{k_2} c\\
+v &= k_2.a.b\\
+\dot{a} &= \frac{da}{dt} = -v\\
+\dot{b} &= -v\\
+\dot{c} &= v
+\end{align*}
 
 \end{document}
