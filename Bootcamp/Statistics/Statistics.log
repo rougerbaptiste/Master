@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2016.9.20)  20 SEP 2016 11:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2016.9.20)  21 SEP 2016 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -517,7 +517,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 Here is how much of TeX's memory you used:
  3458 strings out of 493315
  43883 string characters out of 6145893
- 114649 words of memory out of 5000000
+ 115649 words of memory out of 5000000
  6841 multiletter control sequences out of 15000+600000
  11502 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -527,7 +527,7 @@ Here is how much of TeX's memory you used:
 exmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/pub
 lic/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr1
 7.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Statistics.pdf (2 pages, 61196 bytes).
+Output written on Statistics.pdf (2 pages, 65208 bytes).
 PDF statistics:
  35 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
