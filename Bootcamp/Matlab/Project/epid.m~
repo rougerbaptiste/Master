@@ -4,14 +4,14 @@ Ntot = 50;
 
 mononucleosed = zeros(1000,1)';
 mononucleosed(1)=1;
-for i2= 1:1000
+for i2= 1:5000
     sickness = zeros(Ntot,1)';
     sickness(1) = 1;
 
     immuned = zeros(Ntot,1)';
     
 
-    for i = 1:9
+    for i = 1:15
 
         %disp(sickness);
 
