@@ -37,7 +37,7 @@ Probability space : ($\Omega$, $F$, $P$)\\
 \end{itemize}
 
 
-Suppose there are 0.5\% drug users in a population. There is a test with FP1\% and TP99\%, that is applied toa person picked at random. What is the probability that he/she is a drug user ?
+
 
 
 \end{document}

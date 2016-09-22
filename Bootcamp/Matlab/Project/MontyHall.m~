@@ -1,6 +1,6 @@
 clear all;
 
-tries = 100;
+tries = 100000;
 
 nochange = 0;
 nnochange =0;
