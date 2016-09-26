@@ -1,0 +1,37 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+
+
+\author{Baptiste Rouger}
+\title{Bootcamp : Systems in Biology}
+
+
+
+\begin{document}
+
+
+\maketitle
+
+\begin{flushright}
+\end{flushright}
+
+\tableofcontents
+
+\newpage
+
+\[ P(m) = \frac{\langle m \rangle ^m e^{-\langle m \rangle }}{m!} \]
+
+\begin{align*}
+    \frac{\partial p(m,t)}{\partial t} = \lambda(m- 1)p(m-1,t) - \lambda m p(m,t)\\
+    \text{With m the number of mutants}\\
+    var_{random}(t) = \frac{2e^{t\lambda}}{\lambda t}\langle m(t) \rangle
+\end{align*}
+
+\end{document}
