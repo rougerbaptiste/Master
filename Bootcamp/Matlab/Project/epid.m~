@@ -2,16 +2,16 @@ clear all;
 
 Ntot = 50;
 
-mononucleosed = zeros(1000,1)';
-mononucleosed(1)=1;
-for i2= 1:5000
+mononucleosed = zeros(1000,6)';
+mononucleosed(:,1)=1;
+for i2= 1:1000
     sickness = zeros(Ntot,1)';
     sickness(1) = 1;
 
     immuned = zeros(Ntot,1)';
     
-
-    for i = 1:15
+    i=2;
+    while(sum(sickness ~= 0))
 
         %disp(sickness);
 
@@ -42,13 +42,28 @@ for i2= 1:5000
                 end
             end
         end 
-
-
-
+        
+        mononucleosed(i,i2) = sum(sickness);
+        if sum(sickness) == 0
+            tf(i2)= i;
+        end
+        i = i+1;
     end
-    
-    mononucleosed(i2) = sum(sickness);
+
 
 end
 
-hist(mononucleosed);
+means = mean(mononucleosed');
+
+subplot(1,3,1);
+plot(0:(length(means)-1), means);
+errorbar(0:(length(means)-1), means, std(mononucleosed'));
+%axis([0 length(means) 0 max(means)]);
+
+subplot(1,3,2);
+hist(mononucleosed(6,:));
+
+subplot(1,3,3)
+hist(tf);
+
+pause;
