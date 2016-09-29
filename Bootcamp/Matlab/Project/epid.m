@@ -55,15 +55,15 @@ end
 
 means = mean(mononucleosed');
 
-subplot(1,3,1);
+subplot(3,1,1);
 plot(0:(length(means)-1), means);
 errorbar(0:(length(means)-1), means, std(mononucleosed'));
 %axis([0 length(means) 0 max(means)]);
 
-subplot(1,3,2);
+subplot(3,1,2);
 hist(mononucleosed(6,:));
 
-subplot(1,3,3)
+subplot(3,1,3)
 hist(tf);
 
 pause;
