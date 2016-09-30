@@ -1,0 +1,17 @@
+function dydt = toggle_derivative(t,y,p)
+%% Deterministic Model of the Toggle Switch
+    Y0= [0 0 0 0];
+
+    dydt= zeros(4,1);
+
+    % LacI mRNA
+    dydt(1) = p(1) + p(3) * 1/(1+(y(4)/p(6))^p(8)) - p(9)*y(1);
+    % TetR mRNA
+    dydt(2) = p(2) + p(4) * 1/(1+(y(3)/p(5))^p(7)) - p(10)*y(2);
+
+    % LacI
+    dydt(3) = p(11)*y(1) - p(13)*y(3);
+    % TetR
+    dydt(4) = p(12) * y(2) - p(14)*y(4); 
+
+end
