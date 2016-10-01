@@ -27,6 +27,8 @@ for i = 1:tries % The player do not change his door
         openedDoor = floor(rand(1)*3)+1;
     end
 
+    %%%%
+    % As the player does not change his door, we check if he has the right one
 
     if chosenDoor == pricePlace
         nochange = nochange+1;
@@ -58,11 +60,16 @@ for i = 1:tries % The player do not change his door
         openedDoor = floor(rand(1)*3)+1;
     end
 
+    %%%%
+    % We make the player change of door
 
     rechoice = chosenDoor;
     while rechoice == chosenDoor && rechoice == openedDoor
         rechoice = floor(rand(1)*3)+1;
     end
+
+    %%%%
+    % We check if the player has the right door
 
     if rechoice == pricePlace
         change = change +1;
