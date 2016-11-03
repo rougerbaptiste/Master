@@ -1,0 +1,41 @@
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{mathtools}
+
+
+\author{Baptiste Rouger}
+\title{Partial : Systems Biology}
+
+
+
+\begin{document}
+
+
+\maketitle
+
+\[ E + S \xrightleftharpoons[k_2]{k_1} ES \stackrel{k_3}{\rightarrow} P \]
+\[ \frac{dP}{dt} = [ES]k_3\]
+As $k_2 \gg k_3 \rightarrow$ steady state : $[E][S]k_1 - k_2[ES] = 0$
+
+\hrule
+
+\begin{align*}
+    [ES]_{produced} &= [ES]_{consumed}\\
+    [E][S]k_1 &= [ES]k_2 + [ES]k_3\\
+    \frac{[E][S]}{[ES]} = \frac{k_2 + k_3}{k_1} &= \frac{k_2}{k_1} = K_M \text{as } k_3 \ll k_2\\
+    [E_{free}] &= [E_{Tot}] - [ES]\\
+    \Rightarrow ([E_{Tot}] - [ES])S &= K_M[ES]\\
+    [E_{Tot}][S] - [ES] [S] &= K_M [ES]\\
+    [E_{Tot}][S] &= [ES](K_M + [S])\\
+    [ES] &= \frac{[E_{Tot}][S]}{K_M + [S]}\\
+    \text{so } \frac{dP}{dt} &= k_3\frac{[E_{Tot}][S]}{K_M + [S]}
+\end{align*}
+
+\end{document}
